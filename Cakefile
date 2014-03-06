@@ -15,6 +15,9 @@ config =
       browserify: '>=3.31.2'
       coffeeify: '>=0.6.0'
       'uglify-js': '>=2.4.12'
+    repository:
+      type: 'git'
+      url: 'https://github.com/paul-nechifor/web-build-tools'
     license: 'MIT'
 
 cleanupLib = (cb) ->
