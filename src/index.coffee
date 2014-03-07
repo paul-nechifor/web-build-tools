@@ -39,7 +39,7 @@ Build.sh = (commands, cb) ->
 
 Build.writeJson = (file, json) ->
   text = JSON.stringify json, null, '  '
-  fs.writeFileSync file, text
+  fs.writeFileSync file, text + '\n'
 
 Build.cmd = (name, args, cb) ->
   p = spawn name, args
