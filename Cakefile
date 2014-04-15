@@ -6,7 +6,7 @@ config =
   packageJson:
     name: 'web-build-tools'
     author: 'Paul Nechifor <paul@nechifor.net>'
-    version: '0.0.1'
+    version: '0.0.2'
     private: false
     main: './lib'
     scripts:
