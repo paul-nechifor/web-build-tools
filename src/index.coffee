@@ -73,10 +73,10 @@ Build.browserify = (outFile, inFile, opts, cb) ->
   , (err, result) ->
     throw err if err
     if opts.debug
+      fs.writeFileSync outFile, result
+    else
       done = uglifyJs.minify result, fromString: true
       fs.writeFileSync outFile, done.code
-    else
-      fs.writeFileSync outFile, result
     cb?()
 
 Build.commandify = (jsFilePath, cb) ->
