@@ -55,6 +55,9 @@ Build.stylus = (outFile, inFile, opts, cb) ->
   s = stylusPkg input
   s.set 'compress', opts.debug
   s.use nib
+  if opts.defines
+    for key, value of opts.defines
+      s.define key, value
   s.render (err, css) ->
     throw err if err
     fs.writeFileSync outFile, css
