@@ -1,7 +1,7 @@
 {
   "name": "web-build-tools",
   "author": "Paul Nechifor <paul@nechifor.net>",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "private": false,
   "main": "./lib",
   "scripts": {
@@ -9,11 +9,11 @@
     "test": "mocha --compilers coffee:coffee-script/register"
   },
   "dependencies": {
-    "stylus": ">=0.42.3",
-    "nib": ">=1.0.2",
-    "browserify": "3.31.2",
-    "coffeeify": ">=0.6.0",
-    "uglify-js": ">=2.4.12"
+    "stylus": "^0.42.3",
+    "nib": "^1.0.2",
+    "browserify": "^13.0.0",
+    "coffeeify": "^0.6.0",
+    "uglify-js": "^2.4.12"
   },
   "devDependencies": {
     "mocha": ">=1.17.1",
